@@ -1,9 +1,11 @@
-﻿ ### 0x01 安装使用
+### 0x00 简介
+尽可能花更少的时间,使用All in one工具收集更多的信息-子域名
+### 0x01 安装使用
 ___
 - 1.下载
 ```
-git clone git@github.com:coco413/AutoInfoDetect.git
-cd AutoInfoDetect/DiscoverSubdomain
+git git@github.com:coco413/DiscoverSubdomain.git
+cd DiscoverSubdomain
 pip install -r requirements.txt
 ```
 
