@@ -20,10 +20,10 @@ config = {'assets_func': True,
           # 'Nmap_parameter': '-sV -p 80',
 
           'email_func': True,
-          'seed_email_user': 'xxxx@qq.com',
-          'seed_email_pass': 'xxxx',
+          'seed_email_user': '646753606@qq.com',
+          'seed_email_pass': 'jgzitqbrzjwqbcij',
           'seed_email_host': 'smtp.qq.com',
-          'receive_email_user': 'xxxx',
+          'receive_email_user': 'coco413@sina.cn',
 
           'shodan_key': 'UNmOjxeFS2mPA3kmzm1sZwC0XjaTTksy',
 
@@ -128,6 +128,10 @@ def HttpReq(url='', data='', headers={}):
             status, content = r.status_code, r.text
             r.close()
         except requests.exceptions.ConnectionError:
+            pass
+        except requests.exceptions.ChunkedEncodingError:
+            pass
+        except requests.exceptions.ContentDecodingError:
             pass
         except:
             traceback.print_exc()

@@ -33,6 +33,10 @@ def GetBanner(domain, port=80):
         r.close()
     except requests.exceptions.ConnectionError:
         pass
+    except requests.exceptions.ChunkedEncodingError:
+        pass
+    except requests.exceptions.ContentDecodingError:
+        pass
     except:
         traceback.print_exc()
     finally:
