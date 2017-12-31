@@ -16,9 +16,9 @@ sys.setdefaultencoding('utf-8')
 
 
 class SubDomains(object):
-    def __init__(self, domain, thread, mode=False):
+    def __init__(self, domain, thread=100, mode=False):
         self.domain = domain
-        self.thread = thread
+        self.thread = int(thread)
         self.mode = mode
         self.assets = config['assets_func']
         self.result = []
