@@ -119,6 +119,8 @@ def HttpReq(url='', data='', headers={}):
             r.close()
         except requests.exceptions.ConnectionError:
             pass
+        except requests.ReadTimeout:
+            pass
         except:
             traceback.print_exc()
 
