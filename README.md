@@ -59,7 +59,9 @@ ___
 - 发送邮件
 ![](http://p0.cdn.img9.top/ipfs/QmXwKPG1uH42MHVcVGWNhZ4jE8h2L9wZcbaACLQ2Dcb2wH?0.png)
 - 测试结果
-测试阿里子域名，使用lijiejie的大字典，用时4331s跑完的存放在目录文件aliyun_com_1514578637.88.json下。
+测试百度的子域名结果存放在根目录,使用Layer进行结果比对(运行的字典等不一致以及未对结果全部进行验证，所以只能简单参考)
+DiscoverSubdomain使用的lijiejie的大字典发现5148个子域名;Layer发现百度2590个子域名;
+
 
 ### 0x03 可能问题
 ___

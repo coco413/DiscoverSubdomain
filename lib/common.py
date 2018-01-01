@@ -168,7 +168,7 @@ def SaveFile(content, domain, assets=False, email=False):
         data = json.dumps(content)
         with open(filename, 'w+') as fw:
             fw.write(data+'\n')
-        print '[-] Save Local Success!!'
+        print '[-] Save Local Success!!!'
         if config['email_func']:
             Email(file=filename)
     except:

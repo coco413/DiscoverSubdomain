@@ -84,7 +84,7 @@ class SubDomains(object):
                 domains = SubNameBrute(target=self.domain, threads=self.thread, mode=self.mode).run()
                 print colored("\n[-] searchByEnumerate found {} subdomains!!".format(len(domains)), 'blue')
                 self.result.extend(domains)
-                print colored("\n[-] searchByEnumerate and searchByOSINT the total found {} subdomains!!".format(len(list(set(self.result)))), 'blue')
+                print colored("[-] searchByEnumerate and searchByOSINT the total found {} subdomains!!".format(len(list(set(self.result)))), 'blue')
 
                 with open(self.cachefile, 'w+') as fw:
                     for _ in list(set(self.result)):fw.write(_+'\n') # cache subdomains prevent asset error

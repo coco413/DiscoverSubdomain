@@ -35,6 +35,8 @@ def GetBanner(domain, port=80):
         pass
     except requests.exceptions.ChunkedEncodingError:
         pass
+    except requests.TooManyRedirects:
+        pass
     except requests.ReadTimeout:
         pass
     except:
