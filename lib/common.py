@@ -20,10 +20,10 @@ config = {'assets_func': True,
           # 'Nmap_parameter': '-sV -p 80',
 
           'email_func': True,
-          'seed_email_user': '646753606@qq.com',
-          'seed_email_pass': 'jgzitqbrzjwqbcij',
-          'seed_email_host': 'smtp.qq.com',
-          'receive_email_user': 'coco413@sina.cn',
+          'seed_email_user': 'xxx@qq.com',
+          'seed_email_pass': 'jxxxxxwqbcij',
+          'seed_email_host': 'xxxxxxx.qq.com',
+          'receive_email_user': 'xxxxx',
 
           'shodan_key': 'UNmOjxeFS2mPA3kmzm1sZwC0XjaTTksy',
 
