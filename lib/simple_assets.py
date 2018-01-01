@@ -24,7 +24,7 @@ def GetBanner(domain, port=80):
     banner, server = '', ''
     try:
         url = 'http://' + domain if port == 80 else 'https: //' + domain
-        r = requests.get(url, timeout=10, verify=False)
+        r = requests.get(url, timeout=10, verify=False, allow_redirects=False)
         server = r.headers.get('Server')
         content = r.text
         m = re.search(r'<title>(.*)</title>', content, flags=re.I)
