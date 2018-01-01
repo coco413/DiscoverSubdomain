@@ -20,6 +20,7 @@ def get_subdomains(domain):
                 subdomains = [
                     i['hostnames'][0].strip() for i in data['matches'] if CheckDomainFormat(
                         i['hostnames'][0].strip())]
+                subdomains = [_ for _ in subdomains if _.endswith(domain)]
     except TypeError:
         pass
     except:

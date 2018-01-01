@@ -35,7 +35,7 @@ def GetBanner(domain, port=80):
         pass
     except requests.exceptions.ChunkedEncodingError:
         pass
-    except requests.exceptions.ContentDecodingError:
+    except requests.ReadTimeout:
         pass
     except:
         traceback.print_exc()
