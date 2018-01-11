@@ -92,6 +92,7 @@ class SubDomains(object):
                 if self.assets:
                     print colored('*' * 10 + 'Assets Discover Mode' + '*' * 10, 'yellow')
                     result = AssetsScan(list(set(self.result)))
+
                     SaveFile(content=result, domain=self.domain)
                 else:
                     SaveFile(content=list(set(self.result)), domain=self.domain)

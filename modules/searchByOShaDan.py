@@ -53,9 +53,7 @@ def get_subdomains(domain):
         formatdata = json.loads(content)['data']
         result = [i.keys()[0] for i in formatdata]
         subdomains = [i.split('|')[1] for i in result]
-    except TypeError:
-        pass
     except:
-        traceback.print_exc()
+        pass
     finally:
         return list(set(subdomains))
